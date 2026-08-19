@@ -1,0 +1,21 @@
+services:
+  portfolio:
+    container_name: kaio-portfolio
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      HOSTNAME: 0.0.0.0
+    ports:
+      - "127.0.0.1:3000:3000"
+    networks:
+      - portfolio
+    security_opt:
+      - no-new-privileges:true
+
+networks:
+  portfolio:
+    name: portfolio
