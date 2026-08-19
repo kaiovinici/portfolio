@@ -2,6 +2,7 @@ import { Container } from "@/components/ui/container";
 import { ExternalIcon } from "@/components/ui/external-icon";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { projects } from "@/data/projects";
+import Image from "next/image";
 
 const statusLabel = {
   "demo-preparation": "Demo em preparação",
@@ -15,22 +16,16 @@ export function Projects() {
     <section id="projetos" className="section-shell scroll-mt-20">
       <Container>
         <SectionHeading
-          eyebrow="04 — Projetos"
-          title="Problemas reais, soluções que uso."
+          eyebrow="Projetos"
+          title="Coisas que construí."
           description="Projetos construídos a partir de necessidades concretas. As demonstrações públicas utilizam dados fictícios e ambientes isolados."
         />
         <div className="mt-12">
           {projects.map((project) => (
             <article className="project-card" key={project.name}>
               <div className="project-preview" aria-hidden="true">
-                <div className="project-window">
-                  <div className="project-window-top"><span /><span /><span /></div>
-                  <div className="project-window-body">
-                    <div className="project-chart"><i /><i /><i /><i /><i /><i /></div>
-                    <div className="project-summary"><span /><span /><span /></div>
-                  </div>
-                </div>
-                <span className="project-name-mark">NE</span>
+                {project.image ? <Image className="project-logo" src={project.image} alt="" width={480} height={119} /> : null}
+                <p className="project-preview-caption">Um projeto pessoal que nasceu de uma necessidade real.</p>
               </div>
               <div className="p-6 sm:p-9">
                 <div className="flex flex-wrap items-center justify-between gap-4">

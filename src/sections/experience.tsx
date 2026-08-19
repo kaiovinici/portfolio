@@ -32,7 +32,7 @@ export function Experience() {
   return (
     <section id="experiencia" className="section-shell scroll-mt-20">
       <Container>
-        <SectionHeading eyebrow="03 — Experiência" title="Uma evolução construída na prática." description="Da observabilidade à responsabilidade direta pela estabilidade da rede — e, agora, à automação dos processos que sustentam a operação." />
+        <SectionHeading eyebrow="Experiência" title="Uma evolução construída na prática." description="Comecei monitorando. Passei a investigar e resolver. Hoje também busco automatizar e construir." />
         <ol className="experience-list mt-14">
           {roles.map((role) => (
             <li key={role.role} className={role.emphasis ? "is-current" : ""}>

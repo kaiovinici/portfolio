@@ -69,8 +69,8 @@ button {
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.075);
-  border-radius: 1rem;
-  background: linear-gradient(145deg, rgba(255, 255, 255, 0.035), rgba(255, 255, 255, 0.012));
+  border-radius: 0.75rem;
+  background: rgba(255, 255, 255, 0.018);
 }
 
 .nav-link,
@@ -219,18 +219,33 @@ button {
 .project-preview {
   position: relative;
   display: grid;
-  min-height: 21rem;
-  place-items: center;
+  min-height: 18rem;
+  place-content: center;
+  gap: 2rem;
   overflow: hidden;
   border-bottom: 1px solid rgba(255, 255, 255, 0.07);
-  background: #0c1016;
+  padding: 3rem;
+  background: #0b0d12;
 }
 
 .project-preview::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: radial-gradient(circle at 50% 55%, rgba(47, 111, 237, 0.15), transparent 55%);
+  content: none;
+}
+
+.project-logo {
+  position: relative;
+  width: min(100%, 24rem);
+  height: auto;
+  object-fit: contain;
+}
+
+.project-preview-caption {
+  position: relative;
+  max-width: 19rem;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 1.4rem;
+  color: #71717a;
 }
 
 .project-window {
@@ -354,8 +369,8 @@ button {
 .lab-shell {
   position: relative;
   overflow: hidden;
-  border-radius: 1.25rem;
-  background: #070709;
+  border-radius: 0.75rem;
+  background: #08080a;
   padding: 2rem;
 }
 

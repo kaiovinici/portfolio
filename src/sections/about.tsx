@@ -13,12 +13,12 @@ export function About() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.8fr_1.2fr] lg:gap-20">
           <div>
-            <SectionHeading eyebrow="01 — Sobre" title="Não comecei pelo código." />
+            <SectionHeading eyebrow="Sobre mim" title="Não comecei pelo código." />
             <p className="mt-6 max-w-md text-base leading-7 text-zinc-400 sm:text-lg">
               Comecei entendendo o que acontece quando um serviço falha, uma rota deixa de responder ou uma infraestrutura precisa continuar disponível.
             </p>
             <blockquote className="mt-10 border-l border-zinc-700 pl-5 text-lg leading-8 text-zinc-300">
-              “Meu diferencial é compreender o software e o ambiente que o mantém de pé.”
+              “Quero saber como o código funciona — e também o que é necessário para mantê-lo no ar.”
             </blockquote>
           </div>
           <ol className="story-list">

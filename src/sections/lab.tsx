@@ -15,7 +15,7 @@ export function Lab() {
     <section id="lab" className="section-shell scroll-mt-20">
       <Container>
         <div className="lab-shell">
-          <SectionHeading eyebrow="05 — Engineering Lab" title="Além da aplicação." description="Um espaço para estudar o caminho completo: do pacote que atravessa a rede ao serviço que roda em produção." />
+          <SectionHeading eyebrow="Meu laboratório" title="Além da aplicação." description="Assuntos que estudo e experimento para entender o caminho completo, da rede ao serviço em produção." />
           <div className="mt-12 grid gap-px overflow-hidden rounded-xl border border-white/[0.07] bg-white/[0.07] sm:grid-cols-2 lg:grid-cols-3">
             {areas.map(([title, text], index) => (
               <article className="bg-zinc-950 p-6 sm:p-7" key={title}>

@@ -6,7 +6,7 @@ export function Stack() {
   return (
     <section id="stack" className="section-shell scroll-mt-20">
       <Container>
-        <SectionHeading eyebrow="02 — Stack" title="Tecnologias com contexto." description="Ferramentas organizadas pela função que cumprem — sem porcentagens arbitrárias, com experiência aplicada a problemas reais." />
+        <SectionHeading eyebrow="O que uso" title="Tecnologias que fazem parte do meu dia." description="Algumas vieram do trabalho, outras dos estudos. Todas ajudam a entender e construir soluções melhores." />
         <div className="mt-12 grid gap-4 md:grid-cols-2">
           {stack.map((category, index) => (
             <article className="panel stack-card p-6 sm:p-8" key={category.title}>

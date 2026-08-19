@@ -15,10 +15,10 @@ export function Hero() {
             Olá, sou Kaio Vinicius.
           </p>
           <h1 className="max-w-4xl text-5xl font-semibold leading-[1.04] tracking-[-0.055em] text-white sm:text-6xl lg:text-[4.65rem]">
-            Trabalho com redes. <span className="text-zinc-500">E também construo software.</span>
+            Gosto de entender <span className="text-zinc-500">como tudo se conecta.</span>
           </h1>
           <p className="mt-8 max-w-2xl text-lg leading-8 text-zinc-400 sm:text-xl">
-            Minha experiência nasceu na operação de ambientes críticos. Hoje, conecto essa visão ao desenvolvimento, à automação e ao DevOps.
+            Trabalho com redes e infraestrutura, estudo desenvolvimento e crio soluções para problemas que encontro no caminho.
           </p>
           <div className="mt-10 flex flex-wrap gap-3">
             <a className="button-primary" href="#sobre">Conheça minha trajetória <span aria-hidden="true">↓</span></a>

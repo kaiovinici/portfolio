@@ -8,8 +8,9 @@ export const projects: Project[] = [
     problem:
       "Centralizar a rotina financeira compartilhada com segurança, visualização clara e controle sobre os próprios dados.",
     technologies: ["Python", "Flask", "SQLite", "WebAuthn", "Docker", "Caddy"],
+    image: "/assets/nestegg-logo.png",
     demoUrl: "https://nestegg-demo.kaiovinici.dev",
-    status: "local-demo",
+    status: "published",
     featured: true,
   },
 ];

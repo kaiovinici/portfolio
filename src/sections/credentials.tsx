@@ -5,7 +5,7 @@ export function Credentials() {
   return (
     <section id="formacao" className="section-shell scroll-mt-20">
       <Container>
-        <SectionHeading eyebrow="06 — Formação" title="Fundamentos em evolução contínua." />
+        <SectionHeading eyebrow="Formação" title="Continuo aprendendo." />
         <div className="mt-12 grid gap-10 lg:grid-cols-2 lg:gap-20">
           <div>
             <p className="mb-5 text-xs uppercase tracking-[0.12em] text-zinc-600">Formação acadêmica</p>
