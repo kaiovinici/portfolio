@@ -24,10 +24,10 @@ export function Projects() {
           {projects.map((project) => (
             <article className="project-card" key={project.name}>
               <div className="project-preview" aria-hidden="true">
-                {project.image ? <Image className="project-logo" src={project.image} alt="" width={480} height={119} /> : null}
-                <p className="project-preview-caption">Um projeto pessoal que nasceu de uma necessidade real.</p>
+                {project.image ? <Image className="project-screenshot" src={project.image} alt={`Tela principal do projeto ${project.name}`} width={1440} height={1029} /> : null}
               </div>
               <div className="p-6 sm:p-9">
+                {project.logo ? <Image className="mb-7 h-auto w-36" src={project.logo} alt={`Logo ${project.name}`} width={480} height={119} /> : null}
                 <div className="flex flex-wrap items-center justify-between gap-4">
                   <h3 className="text-2xl font-medium tracking-[-0.03em] text-white">{project.name}</h3>
                   <span className="status-label"><i />{statusLabel[project.status]}</span>

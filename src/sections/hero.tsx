@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/container";
 import { ExternalIcon } from "@/components/ui/external-icon";
 import { siteConfig } from "@/utils/site";
+import Image from "next/image";
 
 const technologies = ["Python", "TypeScript", "Linux", "Docker", "BGP", "IPv6", "Automação"];
 
@@ -28,14 +29,18 @@ export function Hero() {
           </div>
         </div>
 
-        <aside className="journey-note" aria-label="Resumo da trajetória profissional">
-          <p className="font-mono text-[0.65rem] uppercase tracking-[0.16em] text-zinc-600">Minha trajetória</p>
-          <ol className="mt-7 space-y-7">
-            <li><span>2024</span><div><strong>Monitoramento</strong><p>Incidentes, circuitos e disponibilidade.</p></div></li>
-            <li><span>Hoje</span><div><strong>Redes</strong><p>Operação ISP, roteamento e automação.</p></div></li>
-            <li><span>Próximo</span><div><strong>Desenvolvimento</strong><p>Software com contexto de infraestrutura.</p></div></li>
-          </ol>
-        </aside>
+        <figure className="portrait-wrap">
+          <Image
+            className="portrait-image"
+            src="/assets/kaio-portrait.png"
+            alt="Retrato de Kaio Vinicius"
+            width={1254}
+            height={1254}
+            priority
+            sizes="(max-width: 1024px) 70vw, 32vw"
+          />
+          <figcaption>Kaio Vinicius · João Pessoa, PB</figcaption>
+        </figure>
 
         <div className="flex flex-wrap items-center gap-x-7 gap-y-3 border-t border-white/[0.07] pt-7 lg:col-span-2">
           <span className="mr-2 text-xs text-zinc-600">Ferramentas do caminho</span>

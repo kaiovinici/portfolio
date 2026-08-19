@@ -6,6 +6,7 @@ export interface Project {
   problem: string;
   technologies: string[];
   image?: string;
+  logo?: string;
   demoUrl?: string;
   repositoryUrl?: string;
   status: ProjectStatus;
