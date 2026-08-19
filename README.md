@@ -1,29 +1,38 @@
-# Kaio Vinicius — Portfólio
+# Portfólio de Kaio Vinicius
 
-Portfólio profissional de Kaio Vinicius, conectando desenvolvimento de software, redes, infraestrutura, automação, DevOps e Cloud.
+Este é o meu espaço para reunir um pouco da minha trajetória, das tecnologias que uso e dos projetos que desenvolvo. Trabalho com redes e infraestrutura, estudo desenvolvimento de software e gosto de criar soluções para problemas que encontro no dia a dia.
 
-> Screenshot será adicionado após a conclusão da interface.
+O portfólio está disponível em [kaiovinici.dev](https://kaiovinici.dev).
 
-## Stack
+## Funcionalidades
 
-- Next.js 16 com App Router
-- React 19 e TypeScript
+- apresentação da minha experiência profissional e formação
+- projetos com descrição, tecnologias e demonstração pública
+- visão geral das ferramentas que fazem parte da minha rotina
+- links diretos para GitHub e LinkedIn
+- layout responsivo para computadores e dispositivos móveis
+- metadados para compartilhamento, sitemap e arquivo de robots
+
+## Tecnologias
+
+- Next.js 16
+- React 19
+- TypeScript
 - Tailwind CSS 4
-- ESLint
-- Docker e Docker Compose
+- Docker
 
-## Desenvolvimento local
+## Como executar
 
-Requisitos: Node.js 24+ e npm 11+.
+É necessário ter Node.js 24 ou uma versão mais recente.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Acesse `http://localhost:3000`.
+Depois, acesse [http://localhost:3000](http://localhost:3000).
 
-## Verificações e build
+Para verificar o código e gerar a versão de produção:
 
 ```bash
 npm run lint
@@ -31,30 +40,20 @@ npm run build
 npm start
 ```
 
-## Docker
+Também é possível executar o projeto com Docker:
 
 ```bash
-docker compose up --build -d
+docker compose up --build
 ```
 
-O Compose publica a aplicação somente em `127.0.0.1:3000`. No deploy, a rede do serviço será ajustada após a inspeção da rede utilizada pelo Caddy; nenhuma configuração existente deve ser substituída.
+## Organização do projeto
 
-## Estrutura
+- `src/app` contém a estrutura principal e os estilos globais
+- `src/components` reúne os componentes reutilizáveis
+- `src/data` concentra os conteúdos estruturados
+- `src/sections` contém as seções exibidas na página
+- `public/assets` armazena as imagens utilizadas no portfólio
 
-```text
-src/
-├── app/          # rotas, layout e estilos globais
-├── components/   # componentes reutilizáveis
-├── data/         # conteúdo estruturado do portfólio
-├── sections/     # seções da página principal
-├── types/        # tipos compartilhados
-└── utils/        # configurações e utilitários
-```
+## Contato
 
-## Deploy
-
-A imagem utiliza build multi-stage e a saída standalone do Next.js. O destino planejado é uma VPS própria com Docker e Caddy, publicada em [kaiovinici.dev](https://kaiovinici.dev). A configuração final depende de inspeção não destrutiva dos containers, portas, redes, DNS e Caddyfile existentes.
-
-## Autor
-
-Kaio Vinicius — [GitHub](https://github.com/kaiovinici) · [kaiovinici.dev](https://kaiovinici.dev)
+Você pode me encontrar no [GitHub](https://github.com/kaiovinici) e no [LinkedIn](https://www.linkedin.com/in/kaio-vinici).
